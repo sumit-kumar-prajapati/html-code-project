@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - BikeHub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <i class="fas fa-motorcycle"></i>
+                <span>BikeHub</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html" class="cart-link"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
+                <li><a href="login.html" class="btn-login">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section style="padding: 60px 0; background: white;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;">
+                <div id="product-image" style="text-align: center; background: linear-gradient(45deg, #667eea, #764ba2); border-radius: 10px; padding: 50px; color: white; min-height: 300px; display: flex; align-items: center; justify-content: center;">
+                    <img id="bike-image" src="" alt="Bike" style="max-width:100%; max-height:300px; object-fit:contain;">
+                </div>
+                <div id="product-info">
+                </div>
+            </div>
+
+            <div style="margin-top: 60px; background: #f8f9fa; padding: 40px; border-radius: 10px;">
+                <h2 style="margin-bottom: 30px;">Complete Specifications</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;" id="specs-grid">
+                </div>
+            </div>
+
+            <div style="margin-top: 60px;">
+                <h2 style="margin-bottom: 30px;">Video Gallery</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+                    <div style="border-radius: 10px; overflow: hidden; aspect-ratio: 16/9; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
+                        <iframe width="100%" height="100%" src="istockphoto-1437265516-640_adpp_is.mp4" frameborder="0" allowfullscreen style="border: none;"></iframe>
+                    </div>
+                    <div style="border-radius: 10px; overflow: hidden; aspect-ratio: 16/9; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
+                        <iframe width="100%" height="100%" src="istockphoto-2224651241-640_adpp_is.mp4" frameborder="0" allowfullscreen style="border: none;"></iframe>
+                    </div>
+                    <div style="border-radius: 10px; overflow: hidden; aspect-ratio: 16/9; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
+                        <iframe width="100%" height="100%" src="istockphoto-1911770125-640_adpp_is.mp4" frameborder="0" allowfullscreen style="border: none;"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 60px;">
+                <h2 style="margin-bottom: 30px;">Customer Reviews</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                    <div style="background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); text-align: center;">
+                        <img src="reviewer-1.jpg" alt="Rajesh Kumar" style="width: 70px; height: 70px; border-radius: 50%; object-fit: cover; margin-bottom: 15px; border: 3px solid #e74c3c;">
+                        <div style="color: #f39c12; margin-bottom: 10px;">⭐⭐⭐⭐⭐</div>
+                        <p>"Excellent bike! Performance is amazing."</p>
+                        <p style="margin-top: 10px; font-weight: 600;">- Rajesh Kumar</p>
+                    </div>
+                    <div style="background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); text-align: center;">
+                        <img src="reviewer-2.jpg" alt="Priya Singh" style="width: 70px; height: 70px; border-radius: 50%; object-fit: cover; margin-bottom: 15px; border: 3px solid #e74c3c;">
+                        <div style="color: #f39c12; margin-bottom: 10px;">⭐⭐⭐⭐⭐</div>
+                        <p>"Best price in the market. Highly satisfied!"</p>
+                        <p style="margin-top: 10px; font-weight: 600;">- Priya Singh</p>
+                    </div>
+                    <div style="background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); text-align: center;">
+                        <img src="reviewer-3.jpg" alt="Amit Patel" style="width: 70px; height: 70px; border-radius: 50%; object-fit: cover; margin-bottom: 15px; border: 3px solid #e74c3c;">
+                        <div style="color: #f39c12; margin-bottom: 10px;">⭐⭐⭐⭐⭐</div>
+                        <p>"Great quality and fast delivery. Recommended!"</p>
+                        <p style="margin-top: 10px; font-weight: 600;">- Amit Patel</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 60px;">
+                <h2 style="margin-bottom: 30px;">Related Bikes</h2>
+                <div class="products-grid" id="related-products">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>BikeHub</h4>
+                    <p>Your trusted online bike store in India.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="#">Commuter Bikes</a></li>
+                        <li><a href="#">Sports Bikes</a></li>
+                        <li><a href="#">Cruiser Bikes</a></li>
+                        <li><a href="#">Adventure Bikes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> +91-9876-543-210</p>
+                    <p><i class="fas fa-envelope"></i> info@bikehub.in</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Delhi, India</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 BikeHub. All Rights Reserved. | Made with <i class="fas fa-heart"></i> in India</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const selectedBike = JSON.parse(localStorage.getItem('selectedBike'));
+            if (!selectedBike) {
+                window.location.href = 'products.html';
+                return;
+            }
+
+            const bikeImage = document.getElementById('bike-image');
+            if (bikeImage && selectedBike.image) {
+                bikeImage.src = selectedBike.image;
+                bikeImage.alt = selectedBike.name;
+            }
+
+            const infoDiv = document.getElementById('product-info');
+            const discount = Math.round(((selectedBike.originalPrice - selectedBike.price) / selectedBike.originalPrice) * 100);
+
+            infoDiv.innerHTML = `
+                <div>
+                    <div style="color: #3498db; font-weight: 600; margin-bottom: 10px; text-transform: uppercase;">${selectedBike.category}</div>
+                    <h1 style="font-size: 36px; margin-bottom: 15px; color: #2c3e50;">${selectedBike.name}</h1>
+                    <div style="color: #f39c12; font-size: 18px; margin-bottom: 20px;">
+                        ${'⭐'.repeat(Math.floor(selectedBike.rating))} ${selectedBike.rating} (245 reviews)
+                    </div>
+                    
+                    <div style="background: #ecf0f1; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+                        <div style="display: flex; gap: 20px; align-items: center;">
+                            <div>
+                                <h2 style="font-size: 32px; color: #e74c3c; margin: 0;">₹${selectedBike.price.toLocaleString('en-IN')}</h2>
+                                <span style="text-decoration: line-through; color: #95a5a6;">₹${selectedBike.originalPrice.toLocaleString('en-IN')}</span>
+                                <span style="background: #27ae60; color: white; padding: 5px 10px; border-radius: 5px; margin-left: 10px; font-weight: 600;">${discount}% OFF</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 25px;">
+                        <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; border-left: 4px solid #e74c3c;">
+                            <div style="font-size: 12px; color: #7f8c8d; text-transform: uppercase;">Engine</div>
+                            <div style="font-size: 18px; font-weight: 600; color: #2c3e50;">${selectedBike.engine}</div>
+                        </div>
+                        <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; border-left: 4px solid #3498db;">
+                            <div style="font-size: 12px; color: #7f8c8d; text-transform: uppercase;">Mileage</div>
+                            <div style="font-size: 18px; font-weight: 600; color: #2c3e50;">${selectedBike.mileage}</div>
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 25px;">
+                        <h3 style="margin-bottom: 15px; color: #2c3e50;">Key Features</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="padding: 10px 0; border-bottom: 1px solid #ecf0f1;">
+                                <i class="fas fa-check" style="color: #27ae60; margin-right: 10px;"></i>${selectedBike.features[0]}
+                            </li>
+                            <li style="padding: 10px 0; border-bottom: 1px solid #ecf0f1;">
+                                <i class="fas fa-check" style="color: #27ae60; margin-right: 10px;"></i>${selectedBike.features[1]}
+                            </li>
+                            <li style="padding: 10px 0;">
+                                <i class="fas fa-check" style="color: #27ae60; margin-right: 10px;"></i>2-3 Years Warranty
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                        <button class="btn-primary" onclick="addToCart(${selectedBike.id})" style="width: 100%; padding: 15px;">Add to Cart</button>
+                        <button style="background: #2c3e50; color: white; border: none; padding: 15px; border-radius: 5px; cursor: pointer; font-weight: 600; font-size: 16px;" onclick="goToCheckout()">Buy Now</button>
+                    </div>
+
+                    <div style="margin-top: 25px; padding: 20px; background: #e8f4f8; border-radius: 8px;">
+                        <h4 style="color: #2c3e50; margin-bottom: 10px;">
+                            <i class="fas fa-truck" style="color: #3498db; margin-right: 10px;"></i>Free Shipping
+                        </h4>
+                        <p style="color: #7f8c8d; font-size: 14px; margin: 0;">
+                            Free delivery across India for orders above ₹50,000. Standard delivery: 5-7 days.
+                        </p>
+                    </div>
+                </div>`;
+
+            const specsGrid = document.getElementById('specs-grid');
+            const specs = [
+                { label: 'Engine Type', value: 'Single Cylinder' },
+                { label: 'Fuel Tank Capacity', value: '12-15 Liters' },
+                { label: 'Transmission', value: 'Manual' },
+                { label: 'Weight', value: '120-180 kg' },
+                { label: 'Brakes', value: 'Disc/Drum' },
+                { label: 'Suspension', value: 'Telescopic' },
+                { label: 'Colors Available', value: '4 Colors' },
+                { label: 'Warranty', value: '2-3 Years' }
+            ];
+
+            specs.forEach(spec => {
+                const item = document.createElement('div');
+                item.style.cssText = 'background: white; padding: 20px; border-radius: 8px; border-left: 4px solid #e74c3c;';
+                item.innerHTML = `
+                    <div style="font-size: 12px; color: #7f8c8d; text-transform: uppercase; margin-bottom: 8px;">${spec.label}</div>
+                    <div style="font-size: 16px; font-weight: 600; color: #2c3e50;">${spec.value}</div>
+                `;
+                specsGrid.appendChild(item);
+            });
+
+            // Load related products
+            const relatedContainer = document.getElementById('related-products');
+            const relatedBikes = bikes.filter(b => b.category === selectedBike.category && b.id !== selectedBike.id).slice(0, 4);
+            
+            relatedBikes.forEach(bike => {
+                const discount = Math.round(((bike.originalPrice - bike.price) / bike.originalPrice) * 100);
+                const element = document.createElement('div');
+                element.className = 'product-card';
+                element.innerHTML = `
+                    <div class="product-image"><img src="${bike.image}" alt="${bike.name}" style="width:100%;height:100%;object-fit:contain;padding:10px;"></div>
+                    <div class="product-info">
+                        <div class="product-category">${bike.category}</div>
+                        <div class="product-name">${bike.name}</div>
+                        <div class="product-features">
+                            <span>${bike.engine}</span>
+                            <span>${bike.mileage}</span>
+                        </div>
+                        <div class="product-rating">${'⭐'.repeat(Math.floor(bike.rating))} ${bike.rating}</div>
+                        <div>
+                            <span class="product-price">₹${bike.price.toLocaleString('en-IN')}</span>
+                            <span class="product-original-price">₹${bike.originalPrice.toLocaleString('en-IN')}</span>
+                            <span class="product-discount">${discount}% OFF</span>
+                        </div>
+                        <button class="btn-buy" onclick="addToCart(${bike.id})">Add to Cart</button>
+                    </div>
+                `;
+                element.onclick = () => viewProductDetail(bike.id);
+                element.querySelector('.btn-buy').onclick = (e) => {
+                    e.stopPropagation();
+                    addToCart(bike.id);
+                };
+                relatedContainer.appendChild(element);
+            });
+        });
+
+        function goToCheckout() {
+            const selectedBike = JSON.parse(localStorage.getItem('selectedBike'));
+            addToCart(selectedBike.id);
+            window.location.href = 'cart.html';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - BikeHub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <i class="fas fa-motorcycle"></i>
+                <span>BikeHub</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="cart.html" class="cart-link"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
+                <li><a href="login.html" class="btn-login">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 60px 0; text-align: center;">
+        <div class="container">
+            <h1 style="font-size: 48px; margin-bottom: 20px;">Contact Us</h1>
+            <p style="font-size: 18px; opacity: 0.9;">We're here to help. Reach out to us anytime.</p>
+        </div>
+    </section>
+
+    <section style="padding: 80px 0; background: white;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px;">
+                <div>
+                    <h2 style="color: #2c3e50; margin-bottom: 30px;">Send us a Message</h2>
+                    <form onsubmit="handleContactForm(event)">
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Phone Number</label>
+                            <input type="tel" placeholder="+91-9876543210" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Subject</label>
+                            <select required>
+                                <option value="">-- Select Subject --</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="support">Technical Support</option>
+                                <option value="complaint">Complaint</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="purchase">Purchase Inquiry</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea style="width: 100%; padding: 10px; border: 1px solid #bdc3c7; border-radius: 5px; font-family: inherit; font-size: 14px;" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary" style="width: 100%; padding: 12px;">Send Message</button>
+                    </form>
+                </div>
+
+                
+                <div>
+                    <h2 style="color: #2c3e50; margin-bottom: 30px;">Get in Touch</h2>
+                    
+                    <div style="margin-bottom: 30px; padding: 25px; background: #f8f9fa; border-radius: 10px; border-left: 4px solid #e74c3c;">
+                        <h4 style="color: #2c3e50; margin-bottom: 10px;">
+                            <i class="fas fa-map-marker-alt" style="color: #e74c3c; margin-right: 10px;"></i>Headquarters
+                        </h4>
+                        <p style="color: #7f8c8d; margin: 0;">
+                            BikeHub Pvt Ltd<br>
+                            New Delhi Industrial Estate<br>
+                            Delhi - 110012, India
+                        </p>
+                    </div>
+
+                    <div style="margin-bottom: 30px; padding: 25px; background: #f8f9fa; border-radius: 10px; border-left: 4px solid #3498db;">
+                        <h4 style="color: #2c3e50; margin-bottom: 10px;">
+                            <i class="fas fa-phone" style="color: #3498db; margin-right: 10px;"></i>Toll Free
+                        </h4>
+                        <p style="color: #7f8c8d; margin: 0;">
+                            <a href="tel:+919876543210" style="text-decoration: none; color: #3498db; font-weight: 600;">+91-9876-543-210</a><br>
+                            <a href="tel:08009876543" style="text-decoration: none; color: #3498db; font-weight: 600;">1800-987-6543</a>
+                        </p>
+                    </div>
+
+                    <div style="margin-bottom: 30px; padding: 25px; background: #f8f9fa; border-radius: 10px; border-left: 4px solid #27ae60;">
+                        <h4 style="color: #2c3e50; margin-bottom: 10px;">
+                            <i class="fas fa-envelope" style="color: #27ae60; margin-right: 10px;"></i>Email
+                        </h4>
+                        <p style="color: #7f8c8d; margin: 0;">
+                            <a href="mailto:info@bikehub.in" style="text-decoration: none; color: #3498db;">info@bikehub.in</a><br>
+                            <a href="mailto:support@bikehub.in" style="text-decoration: none; color: #3498db;">support@bikehub.in</a>
+                        </p>
+                    </div>
+
+                    <div style="padding: 25px; background: #f8f9fa; border-radius: 10px; border-left: 4px solid #f39c12;">
+                        <h4 style="color: #2c3e50; margin-bottom: 10px;">
+                            <i class="fas fa-clock" style="color: #f39c12; margin-right: 10px;"></i>Business Hours
+                        </h4>
+                        <p style="color: #7f8c8d; margin: 0;">
+                            Monday - Friday: 9:00 AM - 9:00 PM<br>
+                            Saturday - Sunday: 10:00 AM - 8:00 PM<br>
+                            Holidays: Closed
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 80px;">
+                <h2 style="color: #2c3e50; margin-bottom: 30px; text-align: center;">Our Location</h2>
+                <div style="border-radius: 10px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.1);">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.5485447881893!2d77.23099107547037!3d28.65062887435169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cef8c3e5e5555%3A0x1234567890abcdef!2sNew%20Delhi%20Industrial%20Estate%2C%20Delhi!5e0!3m2!1sen!2sin!4v1707213618000" width="100%" height="450" style="border:none;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div style="margin-top: 30px; padding: 30px; background: #f8f9fa; border-radius: 10px; text-align: center;">
+                    <h3 style="color: #2c3e50; margin-bottom: 15px;">Visit Our Showroom</h3>
+                    <p style="color: #7f8c8d; margin: 10px 0;">
+                        <i class="fas fa-map-marker-alt" style="color: #e74c3c;"></i> BikeHub Pvt Ltd, New Delhi Industrial Estate, Delhi - 110012
+                    </p>
+                    <p style="color: #7f8c8d; margin: 10px 0;">
+                        <i class="fas fa-phone" style="color: #3498db;"></i> +91-9876-543-210
+                    </p>
+                    <p style="color: #7f8c8d; margin: 10px 0;">
+                        <i class="fas fa-clock" style="color: #f39c12;"></i> Mon-Fri: 9:00 AM - 9:00 PM | Sat-Sun: 10:00 AM - 8:00 PM
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding: 80px 0; background: #f8f9fa;">
+        <div class="container">
+            <h2 style="text-align: center; font-size: 36px; margin-bottom: 60px; color: #2c3e50;">Frequently Asked Questions</h2>
+            <div style="display: grid; gap: 20px; max-width: 800px; margin: 0 auto;">
+                <div style="background: white; padding: 25px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                    <h4 style="color: #2c3e50; margin: 0 0 10px 0; cursor: pointer;" onclick="toggleAnswer(this)">
+                        <i class="fas fa-chevron-down" style="color: #e74c3c; margin-right: 10px;"></i>
+                        How long does delivery take?
+                    </h4>
+                    <p class="answer" style="color: #7f8c8d; margin: 0; display: none; margin-top: 15px;">
+                        Delivery typically takes 5-7 business days across India. We provide real-time tracking so you can monitor your bike's delivery status.
+                    </p>
+                </div>
+
+                <div style="background: white; padding: 25px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                    <h4 style="color: #2c3e50; margin: 0 0 10px 0; cursor: pointer;" onclick="toggleAnswer(this)">
+                        <i class="fas fa-chevron-down" style="color: #e74c3c; margin-right: 10px;"></i>
+                        Can I return a bike after purchase?
+                    </h4>
+                    <p class="answer" style="color: #7f8c8d; margin: 0; display: none; margin-top: 15px;">
+                        Yes, we have a 7-day return policy if the bike is unused and in original condition. Contact our support team for details.
+                    </p>
+                </div>
+
+                <div style="background: white; padding: 25px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                    <h4 style="color: #2c3e50; margin: 0 0 10px 0; cursor: pointer;" onclick="toggleAnswer(this)">
+                        <i class="fas fa-chevron-down" style="color: #e74c3c; margin-right: 10px;"></i>
+                        What payment methods do you accept?
+                    </h4>
+                    <p class="answer" style="color: #7f8c8d; margin: 0; display: none; margin-top: 15px;">
+                        We accept EMI, Credit/Debit Cards, Net Banking, UPI, and Cash on Delivery. Choose the option that works best for you.
+                    </p>
+                </div>
+
+                <div style="background: white; padding: 25px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                    <h4 style="color: #2c3e50; margin: 0 0 10px 0; cursor: pointer;" onclick="toggleAnswer(this)">
+                        <i class="fas fa-chevron-down" style="color: #e74c3c; margin-right: 10px;"></i>
+                        Do you provide warranty?
+                    </h4>
+                    <p class="answer" style="color: #7f8c8d; margin: 0; display: none; margin-top: 15px;">
+                        Yes, all bikes come with 2-3 years manufacturer warranty. We also offer extended warranty options for additional protection.
+                    </p>
+                </div>
+
+                <div style="background: white; padding: 25px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                    <h4 style="color: #2c3e50; margin: 0 0 10px 0; cursor: pointer;" onclick="toggleAnswer(this)">
+                        <i class="fas fa-chevron-down" style="color: #e74c3c; margin-right: 10px;"></i>
+                        Can I modify my bike after purchase?
+                    </h4>
+                    <p class="answer" style="color: #7f8c8d; margin: 0; display: none; margin-top: 15px;">
+                        Yes, we provide guidance on modifications. Our experts can help with safe modifications that don't void warranty.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>BikeHub</h4>
+                    <p>Your trusted online bike store in India.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="#">Commuter Bikes</a></li>
+                        <li><a href="#">Sports Bikes</a></li>
+                        <li><a href="#">Cruiser Bikes</a></li>
+                        <li><a href="#">Adventure Bikes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> +91-9876-543-210</p>
+                    <p><i class="fas fa-envelope"></i> info@bikehub.in</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Delhi, India</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 BikeHub. All Rights Reserved. | Made with <i class="fas fa-heart"></i> in India</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script>
+        function toggleAnswer(element) {
+            const answer = element.nextElementSibling;
+            answer.style.display = answer.style.display === 'none' ? 'block' : 'none';
+            const icon = element.querySelector('i');
+            icon.style.transform = answer.style.display === 'none' ? '' : 'rotate(180deg)';
+        }
+
+        function handleContactForm(e) {
+            e.preventDefault();
+            showNotification('Thank you! We will get back to you soon.');
+            e.target.reset();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation - BikeHub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <i class="fas fa-motorcycle"></i>
+                <span>BikeHub</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html" class="cart-link"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
+                <li><a href="login.html" class="btn-login">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <section style="padding: 80px 20px; background: white; text-align: center;">
+        <div class="container" style="max-width: 600px;">
+            
+            <div style="width: 100px; height: 100px; background: #27ae60; color: white; border-radius: 50%; margin: 0 auto 30px; display: flex; align-items: center; justify-content: center; font-size: 50px;">
+                <i class="fas fa-check"></i>
+            </div>
+
+            <h1 style="color: #2c3e50; font-size: 36px; margin-bottom: 15px;">Order Confirmed!</h1>
+            <p style="color: #7f8c8d; font-size: 16px; margin-bottom: 40px;">Thank you for your purchase. Your order has been successfully placed.</p>
+
+            
+            <div style="background: #f8f9fa; padding: 30px; border-radius: 10px; margin-bottom: 40px; text-align: left;">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px;">
+                    <div>
+                        <p style="color: #7f8c8d; font-size: 12px; text-transform: uppercase; margin-bottom: 5px;">Order ID</p>
+                        <p style="color: #2c3e50; font-size: 18px; font-weight: 600; margin: 0;" id="order-id">ORD1234567890</p>
+                    </div>
+                    <div>
+                        <p style="color: #7f8c8d; font-size: 12px; text-transform: uppercase; margin-bottom: 5px;">Order Date</p>
+                        <p style="color: #2c3e50; font-size: 18px; font-weight: 600; margin: 0;" id="order-date"></p>
+                    </div>
+                    <div>
+                        <p style="color: #7f8c8d; font-size: 12px; text-transform: uppercase; margin-bottom: 5px;">Total Amount</p>
+                        <p style="color: #e74c3c; font-size: 18px; font-weight: 600; margin: 0;" id="order-amount">₹0</p>
+                    </div>
+                    <div>
+                        <p style="color: #7f8c8d; font-size: 12px; text-transform: uppercase; margin-bottom: 5px;">Payment Method</p>
+                        <p style="color: #2c3e50; font-size: 18px; font-weight: 600; margin: 0;" id="payment-method">Credit Card</p>
+                    </div>
+                </div>
+            </div>
+
+        
+            <div style="background: white; padding: 30px; border-radius: 10px; margin-bottom: 40px; border: 1px solid #ecf0f1;">
+                <h3 style="color: #2c3e50; margin-bottom: 30px;">Order Status</h3>
+                <div style="position: relative;">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 30px;">
+                    
+                        <div style="flex: 1; text-align: center;">
+                            <div style="width: 40px; height: 40px; background: #27ae60; color: white; border-radius: 50%; margin: 0 auto 10px; display: flex; align-items: center; justify-content: center; font-weight: 600;">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <p style="color: #2c3e50; font-size: 14px; font-weight: 600; margin: 0;">Order Confirmed</p>
+                            <p style="color: #7f8c8d; font-size: 12px; margin: 5px 0 0 0;">Today</p>
+                        </div>
+
+                        <div style="flex: 1; text-align: center; opacity: 0.5;">
+                            <div style="width: 40px; height: 40px; background: #bdc3c7; color: white; border-radius: 50%; margin: 0 auto 10px; display: flex; align-items: center; justify-content: center; font-weight: 600;">
+                                <i class="fas fa-box"></i>
+                            </div>
+                            <p style="color: #2c3e50; font-size: 14px; font-weight: 600; margin: 0;">Processing</p>
+                            <p style="color: #7f8c8d; font-size: 12px; margin: 5px 0 0 0;">1-2 days</p>
+                        </div>
+
+                        <div style="flex: 1; text-align: center; opacity: 0.5;">
+                            <div style="width: 40px; height: 40px; background: #bdc3c7; color: white; border-radius: 50%; margin: 0 auto 10px; display: flex; align-items: center; justify-content: center; font-weight: 600;">
+                                <i class="fas fa-truck"></i>
+                            </div>
+                            <p style="color: #2c3e50; font-size: 14px; font-weight: 600; margin: 0;">Out for Delivery</p>
+                            <p style="color: #7f8c8d; font-size: 12px; margin: 5px 0 0 0;">3-5 days</p>
+                        </div>
+
+                    
+                        <div style="flex: 1; text-align: center; opacity: 0.5;">
+                            <div style="width: 40px; height: 40px; background: #bdc3c7; color: white; border-radius: 50%; margin: 0 auto 10px; display: flex; align-items: center; justify-content: center; font-weight: 600;">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <p style="color: #2c3e50; font-size: 14px; font-weight: 600; margin: 0;">Delivered</p>
+                            <p style="color: #7f8c8d; font-size: 12px; margin: 5px 0 0 0;">5-7 days</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div style="background: #e8f4f8; padding: 25px; border-radius: 10px; border-left: 4px solid #3498db; margin-bottom: 40px; text-align: left;">
+                <h4 style="color: #2c3e50; margin-bottom: 15px;">What's Next?</h4>
+                <ul style="list-style: none; padding: 0; margin: 0;">
+                    <li style="margin-bottom: 10px; color: #7f8c8d;">
+                        <i class="fas fa-check-circle" style="color: #27ae60; margin-right: 10px;"></i>
+                        <strong>Confirmation email:</strong> Check your email for order details
+                    </li>
+                    <li style="margin-bottom: 10px; color: #7f8c8d;">
+                        <i class="fas fa-check-circle" style="color: #27ae60; margin-right: 10px;"></i>
+                        <strong>Tracking:</strong> You'll receive tracking information within 24 hours
+                    </li>
+                    <li style="margin-bottom: 10px; color: #7f8c8d;">
+                        <i class="fas fa-check-circle" style="color: #27ae60; margin-right: 10px;"></i>
+                        <strong>Delivery:</strong> Your bike will be delivered within 5-7 business days
+                    </li>
+                    <li style="color: #7f8c8d;">
+                        <i class="fas fa-check-circle" style="color: #27ae60; margin-right: 10px;"></i>
+                        <strong>Support:</strong> Call us at 9876-543-210 for any queries
+                    </li>
+                </ul>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                <a href="home.html" class="btn-primary" style="display: block; padding: 12px; text-align: center; text-decoration: none;">
+                    <i class="fas fa-home"></i> Back to Home
+                </a>
+                <a href="products.html" style="display: block; padding: 12px; text-align: center; text-decoration: none; background: white; color: #e74c3c; border: 2px solid #e74c3c; border-radius: 5px; font-weight: 600;">
+                    <i class="fas fa-shopping-bag"></i> Continue Shopping
+                </a>
+            </div>
+
+            <div style="margin-top: 40px; padding: 20px; background: white; border-radius: 10px;">
+                <p style="color: #7f8c8d; margin-bottom: 15px;">Need help with your order?</p>
+                <p style="margin: 0;">
+                    <a href="contact.html" style="text-decoration: none; color: #3498db; font-weight: 600;">Contact our support team</a> •
+                    <a href="#" style="text-decoration: none; color: #3498db; font-weight: 600; margin-left: 10px;">Track your order</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>BikeHub</h4>
+                    <p>Your trusted online bike store in India.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="#">Commuter Bikes</a></li>
+                        <li><a href="#">Sports Bikes</a></li>
+                        <li><a href="#">Cruiser Bikes</a></li>
+                        <li><a href="#">Adventure Bikes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> +91-9876-543-210</p>
+                    <p><i class="fas fa-envelope"></i> info@bikehub.in</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Delhi, India</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 BikeHub. All Rights Reserved. | Made with <i class="fas fa-heart"></i> in India</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const orderId = urlParams.get('orderId') || 'ORD' + Date.now();
+            
+            const lastOrder = JSON.parse(localStorage.getItem('lastOrder')) || {};
+            
+            document.getElementById('order-id').textContent = orderId;
+            document.getElementById('order-date').textContent = new Date().toLocaleDateString('en-IN');
+            document.getElementById('order-amount').textContent = '₹' + (lastOrder.amount || 0).toLocaleString('en-IN');
+            
+            const methodMap = {
+                'emi': 'EMI Payment',
+                'card': 'Credit/Debit Card',
+                'cod': 'Cash on Delivery',
+                'netbanking': 'Net Banking',
+                'upi': 'UPI Payment'
+            };
+            document.getElementById('payment-method').textContent = methodMap[lastOrder.method] || 'Online Payment';
+        });
+    </script>
+</body>
+</html>

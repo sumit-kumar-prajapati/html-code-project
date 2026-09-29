@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BikeHub - India Premium Bike Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <i class="fas fa-motorcycle"></i>
+
+                <span>BikeHub</span>
+
+                
+            </div>
+            <ul class="nav-menu">
+                <li><a href="home.html" 
+                    class="active">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html" class="cart-link"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
+                <li><a href="login.html" class="btn-login">Login</a></li>
+            </ul>  
+        </div>
+    </nav>
+
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to BikeHub</h1>
+            <p>Experience Premium Bikes at Best Prices in India</p>
+            <a href="products.html" class="btn-primary">Explore Bikes</a>
+        </div>
+        <div class="hero-video">
+            <img src="featured-bike.jpg" alt="BikeHub - Premium Bikes in India">
+        </div>
+    </section>
+
+   
+
+    <section class="featured-products">
+        <div class="container">
+            <h2>Featured Bikes</h2>
+            <div style="margin-bottom: 30px;">
+                <div class="featured-search-wrapper">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="featured-search" placeholder="Search bikes by name, category, or engine..." class="featured-search-input">
+                </div>
+            </div>
+            <div class="products-grid" id="featured-products">
+            </div>
+        </div>
+    </section>
+
+    <section class="why-choose-us">
+        <div class="container">
+            <h2>Why Choose BikeHub?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-truck"></i>
+                    <h3>Fast Delivery</h3>
+                    <p>Quick delivery across India within 5-7 days</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-credit-card"></i>
+                    <h3>Multiple Payments</h3>
+                    <p>EMI, Cash on Delivery, Credit/Debit Card</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Warranty & Support</h3>
+                    <p>2-3 Years Warranty with 24/7 Support</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Genuine Products</h3>
+                    <p>100% Original Bikes with Certified Dealers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="popular-categories">
+        <div class="container">
+            <h2>Popular Categories</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <img src="bike-4.jpg" alt="Commuter Bikes">
+                    <h3>Commuter Bikes</h3>
+                    <p>Reliable & Fuel-Efficient</p>
+                </div>
+                <div class="category-card">
+                    <img src="bike-6.jpg" alt="Sports Bikes">
+                    <h3>Sports Bikes</h3>
+                    <p>High Performance & Speed</p>
+                </div>
+                <div class="category-card">
+                    <img src="bike-8.jpg" alt="Cruiser Bikes">
+                    <h3>Cruiser Bikes</h3>
+                    <p>Comfort & Style</p>
+                </div>
+                <div class="category-card">
+                    <img src="bike-9.jpg" alt="Adventure Bikes">
+                    <h3>Adventure Bikes</h3>
+                    <p>Off-road Ready</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <img src="reviewer-1.jpg" alt="Rajesh Kumar" class="reviewer-image">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Great bike with amazing features. Delivery was fast and service is excellent!"</p>
+                    <h4>Rajesh Kumar</h4>
+                    <p class="location">Delhi</p>
+                </div>
+                <div class="testimonial-card">
+                    <img src="reviewer-2.jpg" alt="Priya Singh" class="reviewer-image">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"BikeHub provides the best prices in India. Highly recommended!"</p>
+                    <h4>Priya Singh</h4>
+                    <p class="location">Bangalore</p>
+                </div>
+                <div class="testimonial-card">
+                    <img src="reviewer-3.jpg" alt="Amit Patel" class="reviewer-image">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"EMI option makes buying easier. Great website and customer support."</p>
+                    <h4>Amit Patel</h4>
+                    <p class="location">Mumbai</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>BikeHub</h4>
+                    <p>Your trusted online bike store in India.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="#">Commuter Bikes</a></li>
+                        <li><a href="#">Sports Bikes</a></li>
+                        <li><a href="#">Cruiser Bikes</a></li>
+                        <li><a href="#">Adventure Bikes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> +91-9876-543-210</p>
+                    <p><i class="fas fa-envelope"></i> info@bikehub.in</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Delhi, India</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 BikeHub. All Rights Reserved. | Made with <i class="fas fa-heart"></i> in India</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
